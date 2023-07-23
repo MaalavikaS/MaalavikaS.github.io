@@ -1,5 +1,7 @@
 # Maals.github.io
-Quantum Computing with Azure Quantum
+Quantum Computing with Azure Quantum<br>
+
+![alt Quantum](https://github.com/MaalavikaS/Maals.github.io/blob/main/Q.png)
 # Quantum Computing: Applications in Chemistry and Material Sciences<br>
 Quantum Computing is a newly emerging technology that harnesses the physics of quantum mechanics to solve complex problems that would otherwise be computationally expensive using classical theory (binary states). The fundamental unit in quantum computation that gives it an edge over classical methods is the qubit which can exist in multiple states as opposed to just two.<br>
 
