@@ -37,16 +37,16 @@ In simple terms, the quantum part comes into effect in simulating different elec
 
 | Software/Service/Language | Description | 
 | :-------------- | --------------- | 
-| Azure Quantum  | Workspace to run quantum computation tasks with the help of providers   | 
-| IonQ   | Dynamically reconfigurable trapped-ion quantum computer for up to 11 fully connected qubits that lets you run a two-qubit gate between any pair.   | 
-| Quantum Development Kit | An SDK used to interface with Azure Quantum service. Supports languages such as Q#, Qiskit and Cirq |
-| Q# | Q# is a domain-specific language optimized for quantum programming in the Microsoft Quantum ecosystem |
+| [Azure Quantum](https://learn.microsoft.com/en-us/azure/quantum/) | Workspace to run quantum computation tasks with the help of providers   | 
+| [IonQ](https://learn.microsoft.com/en-us/azure/quantum/provider-ionq#ionq-harmony-quantum-computer) | Dynamically reconfigurable trapped-ion quantum computer for up to 11 fully connected qubits that lets you run a two-qubit gate between any pair.   | 
+| [Quantum Development Kit](https://learn.microsoft.com/en-us/training/modules/qsharp-create-first-quantum-development-kit/2-install-quantum-development-kit-code?ns-enrollment-type=learningpath&ns-enrollment-id=learn.quantum-computing-fundamentals) | An SDK used to interface with Azure Quantum service. Supports languages such as Q#, Qiskit and Cirq |
+| [Q#](https://learn.microsoft.com/en-us/training/modules/get-started-azure-quantum/get-started-jupyter-notebook?ns-enrollment-type=learningpath&ns-enrollment-id=learn.quantum-computing-fundamentals&tabs=tabid-ionq) | Q# is a domain-specific language optimized for quantum programming in the Microsoft Quantum ecosystem |
 | Python | Programming language |
-| Quantum Chemistry Library | The quantum chemistry library included in the Quantum Development Kit is specifically designed to synergize effectively with different computational chemistry packages |
-| Qiskit | Qiskit is based on Python, widely used, and focuses on a variety of quantum applications - Developed by IBM |
-| Broombridge | It is a data format that represents various aspects of a quantum circuit |
-| PYSCF Driver | Python-based Simulations of Chemistry Framework, a platform for quantum chemistry calculations and methodology |
-| NWChem (Alternate to PySCF Driver) | NWChem is an open-source computational chemistry software package widely used for performing quantum chemical calculations and simulations. The fermionic Hamiltonian data for various compounds can be downloaded to be used in simulations|
+| [Quantum Chemistry Library](https://learn.microsoft.com/en-us/azure/quantum/user-guide/libraries/chemistry/installation) | The quantum chemistry library included in the Quantum Development Kit is specifically designed to synergize effectively with different computational chemistry packages |
+| [Qiskit](https://qiskit.org/) | Qiskit is based on Python, widely used, and focuses on a variety of quantum applications - Developed by IBM |
+| [Broombridge](https://learn.microsoft.com/en-us/azure/quantum/user-guide/libraries/chemistry/schema/broombridge) | It is a data format that represents various aspects of a quantum circuit |
+| [PYSCF Driver](https://qiskit.org/documentation/stable/0.31/apidoc/qiskit.chemistry.drivers.pyscfd.html) | Python-based Simulations of Chemistry Framework, a platform for quantum chemistry calculations and methodology |
+| [NWChem (Alternate to PySCF Driver)](https://arrows.emsl.pnnl.gov/api/) | NWChem is an open-source computational chemistry software package widely used for performing quantum chemical calculations and simulations. The fermionic Hamiltonian data for various compounds can be downloaded to be used in simulations|
 
 ## Procedure
 
