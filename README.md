@@ -149,7 +149,7 @@ print(result.groundenergy)
 | Molecule | Ground State Energy| Number of Qubits |
 |:---------- | ---------- | ---------- |
 | H2 | -1.804 eV |  |
-| HF |  | |
+| HF | -102.864 eV | |
 | LiH | | |
 
 ---------------------------------------------------------------------
