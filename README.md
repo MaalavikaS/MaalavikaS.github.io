@@ -39,7 +39,7 @@ In simple terms, the quantum part comes into effect in simulating different elec
 | Software/Service/Language | Description | 
 | :-------------- | --------------- | 
 | [Azure Quantum](https://learn.microsoft.com/en-us/azure/quantum/) | Workspace to run quantum computation tasks with the help of providers   | 
-| [IonQ Provider](https://learn.microsoft.com/en-us/azure/quantum/provider-ionq#ionq-harmony-quantum-computer) | Dynamically reconfigurable trapped-ion quantum computer for up to 11 fully connected qubits that lets you run a two-qubit gate between any pair. IonQ Simulators offer upto 29 qubits   | 
+| [IonQ Provider](https://learn.microsoft.com/en-us/azure/quantum/provider-ionq#ionq-harmony-quantum-computer) | Dynamically reconfigurable trapped-ion quantum computer for up to 11 fully connected qubits that lets you run a two-qubit gate between any pair.<br> IonQ Simulators offer upto 29 qubits   | 
 | [Quantum Development Kit](https://learn.microsoft.com/en-us/training/modules/qsharp-create-first-quantum-development-kit/2-install-quantum-development-kit-code?ns-enrollment-type=learningpath&ns-enrollment-id=learn.quantum-computing-fundamentals) | An SDK used to interface with Azure Quantum service. Supports languages such as Q#, Qiskit and Cirq |
 | [Q#](https://learn.microsoft.com/en-us/training/modules/get-started-azure-quantum/get-started-jupyter-notebook?ns-enrollment-type=learningpath&ns-enrollment-id=learn.quantum-computing-fundamentals&tabs=tabid-ionq) | Q# is a domain-specific language optimized for quantum programming in the Microsoft Quantum ecosystem |
 | Python | Programming language |
