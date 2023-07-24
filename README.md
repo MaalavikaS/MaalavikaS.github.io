@@ -125,8 +125,8 @@ from azure.quantum.qiskit import AzureQuantumProvider
 
 # Connect to the Azure Quantum workspace via a Qiskit provider
 provider = AzureQuantumProvider(
-            resource_id = "/subscriptions/61fbc32c-9633-42bf-bfb5-2a8b3aeed21d/resourceGroups/mtc-quantum-rg/providers/Microsoft.Quantum/Workspaces/ComputingQuantum26",
-            location = "East US")
+            resource_id = "",
+            location = "")
 ionq_sim = provider.get_backend('ionq.simulator')
 
 # Set the backend you want to use here.
@@ -145,5 +145,7 @@ print(result.groundenergy)
 ```
 ## Output
 | Molecule | Ground State Energy| Number of Qubits |
-|:---------- | ---------- | ----------: |
+|:---------- | ---------- | ---------- |
 | H2 | -1.18 eV | 4 |
+| HF | -22 | |
+| LiH | | |
