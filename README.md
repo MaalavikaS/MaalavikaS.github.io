@@ -29,8 +29,8 @@ In simple terms, the quantum part comes into effect in simulating different elec
 - **Ground State**: Lowest energy level for an atom or a molecule<br>
 - **Quantum Phase Estimation**: Determines the eigen values using Quantum techniques meant for quantum computation tasks<br>
 - **Eigensolver**: A classical algorithm to find the eigen values given a matrix<br>
-- **SPSA**:
-- **SLSQP**:
+- **Simultaneous Perturbation Stochastic Approximation (SPSA)**:  SPSA is a gradient-free optimization algorithm that excels in noisy or black-box environments<br>
+- **Sequential Least Squares Quadratic Programming (SLSQP)**: SLSQP is a gradient-based optimization algorithm that is well-suited for smooth optimization problems with constraints
 
 
 ## Tech Stack
