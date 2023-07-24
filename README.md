@@ -26,10 +26,10 @@ VQEs are a class of hybrid algorithms in Quantum Computing that aims to obtain t
 In simple terms, the quantum part comes into effect in simulating different electronic configurations in the molecule. These are then measured at each configuration and sent to the classical algorithm. Classical optimization techniques like gradient descent, SPSA or SLSQP are performed for each configuration to obtain the lowest energy (the ground state) of that molecule. It is variational as the expectation of the trial wavefunction is at least equal to the ground state energy.<br>
 
   ### Keywords and their meaning<br>
-•	Hamiltonian: An operator defined for a system, it encompasses both the kinetic and potential energy of a system. The Hamiltonian is a mathematical function that encompasses the energy of a system of atoms or molecules<br>
-•	Ground State: Lowest energy level for an atom or a molecule<br>
-•	QPE: Determines the eigen values using Quantum techniques meant for quantum computation tasks<br>
-•	Eigensolver: A classical algorithm to find the eigen values given a matrix<br>
+•	**Hamiltonian**: An operator defined for a system, it encompasses both the kinetic and potential energy of a system. The Hamiltonian is a mathematical function that encompasses the energy of a system of atoms or molecules<br>
+•	**Ground State**: Lowest energy level for an atom or a molecule<br>
+•	**Quantum Phase Estimation**: Determines the eigen values using Quantum techniques meant for quantum computation tasks<br>
+•	**Eigensolver**: A classical algorithm to find the eigen values given a matrix<br>
 
 ## Tech Stack
 
@@ -68,3 +68,82 @@ There are different kinds of Ansatz available:
 
 ## Block Diagram 
 ![alt VQE workflow](https://github.com/MaalavikaS/Maals.github.io/blob/main/Fermionic%20Hamiltonian.png)
+
+## Code Snippet
+[Source Code obtained from ](https://github.com/microsoft/Quantum/blob/main/samples/azure-quantum/variational-quantum-eigensolver/VQE-qiskit-hydrogen-session.ipynb)
+
+### Using Qiskit
+#Importing PySCFDrivers to obtain the Hamiltonian for the molecule of choice
+```python
+from qiskit_nature.second_q.drivers import PySCFDriver
+driver = PySCFDriver(atom="Li 0 0 0; H 0 0 1.6", basis="sto-3g")
+problem = driver.run()
+```
+#Calling the Jordan-Wigner Mapper which maps a fermionic Hamiltonian to a qubit Hamiltonian
+```python
+from qiskit_nature.second_q.mappers import JordanWignerMapper
+mapper = JordanWignerMapper()
+```
+#Creating a UCCSD(Unitary Coupled Cluster Singles and Doubles) Ansatz (which is usually preferred for a VQE problem) to compute the energy for a certain configuration of parameters. In UCCSD, the wavefunction of a molecular system is represented as a unitary transformation applied to a reference state, typically the Hartree-Fock state.
+```python
+from qiskit_nature.second_q.circuit.library import UCCSD, HartreeFock
+ansatz = UCCSD(
+    problem.num_spatial_orbitals,
+    problem.num_particles,
+    mapper,
+    initial_state=HartreeFock(
+        problem.num_spatial_orbitals,
+        problem.num_particles,
+        mapper,
+    ),
+)
+```
+
+#Initializing the VQE function in Qiskit and passing the Ansatz and the optimizer(Classical part) to estimate the ground state
+```python
+import numpy as np
+from qiskit.algorithms.optimizers import SLSQP
+from qiskit.algorithms.minimum_eigensolvers import VQE
+from qiskit.primitives import Estimator
+vqe = VQE(Estimator(), ansatz, SLSQP())
+```
+
+#Setting the initial parameters to zero and begin ground state estimation and comparing each configuration to check for the minimum value
+```python
+vqe.initial_point = np.zeros(ansatz.num_parameters)
+
+from qiskit_nature.second_q.algorithms import GroundStateEigensolver
+solver = GroundStateEigensolver(mapper, vqe)
+result = solver.solve(problem)
+
+print(f"Total ground state energy = {result.total_energies[0]:.4f}")
+```
+
+### Running the algorithm with IonQ Simulators
+```python
+from azure.quantum.qiskit import AzureQuantumProvider
+
+# Connect to the Azure Quantum workspace via a Qiskit provider
+provider = AzureQuantumProvider(
+            resource_id = "/subscriptions/61fbc32c-9633-42bf-bfb5-2a8b3aeed21d/resourceGroups/mtc-quantum-rg/providers/Microsoft.Quantum/Workspaces/ComputingQuantum26",
+            location = "East US")
+ionq_sim = provider.get_backend('ionq.simulator')
+
+# Set the backend you want to use here.
+# WARNING: Quantinuum simulator usage is not unlimited. Running this sample against it could consume a significant amount of your eHQC quota.
+backend_to_use = ionq_sim
+
+from qiskit_nature.second_q.algorithms import GroundStateEigensolver
+solver = GroundStateEigensolver(mapper, vqe)
+# Wrap the call to solve in a session "with" block so that all jobs submitted by it are grouped together.
+# Learn more about Interactive Hybrid and the Session API at https://aka.ms/AQ/Hybrid/Sessions/Docs
+with backend_to_use.open_session(name="VQE H2") as session:
+    result = solver.solve(problem)
+
+print("AzureQuantum " + backend_to_use.name() + " result:\n")
+print(result.groundenergy)
+```
+## Output
+| Molecule | Ground State Energy| Number of Qubits |
+|:---------- | ---------- | ----------: |
+| H2 | -1.18 eV | 4 |
