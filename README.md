@@ -104,10 +104,10 @@ ansatz = UCCSD(
 #Initializing the VQE function in Qiskit and passing the Ansatz and the optimizer(Classical part) to estimate the ground state
 ```python
 import numpy as np
-from qiskit.algorithms.optimizers import SLSQP
+from qiskit.algorithms.optimizers import SPSA
 from qiskit.algorithms.minimum_eigensolvers import VQE
 from qiskit.primitives import Estimator
-vqe = VQE(Estimator(), ansatz, SLSQP())
+vqe = VQE(Estimator(), ansatz, SPSA())
 ```
 
 #Setting the initial parameters to zero and begin ground state estimation and comparing each configuration to check for the minimum value
@@ -146,11 +146,11 @@ print("AzureQuantum " + backend_to_use.name() + " result:\n")
 print(result.groundenergy)
 ```
 ## Output
-| Molecule | Ground State Energy (Jordan-Wigner Mapping)| Ground State Energy (Bravyi-Kitaev Mapping) |
-|:---------- | ---------- | ---------- |
-| H2 | -1.804 eV |  |
-| HF | -102.864 eV | -102.604 eV|
-| LiH | -6.836 eV| |
+| Molecule | Ground State Energy (Jordan-Wigner Mapping)| Ground State Energy (Bravyi-Kitaev Mapping) | Number of Qubits (JW) | Number of Qubits (BK) |
+|:---------- | ---------- | ---------- | ---------- | ---------- |
+| H2 | -1.804 eV |  | | |
+| HF | -102.864 eV | -102.604 eV| | 4 |
+| LiH | -6.836 eV| | | |
 
 ---------------------------------------------------------------------
 ## References and Sources
