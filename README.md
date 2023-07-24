@@ -19,10 +19,10 @@ In this blog we shall look into the implementation of a Variational Quantum Eige
     
 The compounds/molecules are chosen based on their size and inter-molecular distances as larger molecules require a greater number of qubits which is limited by the availability of qubits by the Quantum resource providers. 
 
-## Introduction to VQEs<br>
+## Introduction to Variational Quantum Eigensolvers (VQEs)<br>
 VQEs are a class of hybrid algorithms in Quantum Computing that aims to obtain the ground state energy of a molecule (usually in a configuration). The classical computer is used to define quantum circuits with certain parameters. After the quantum state is measured, the classical computer evaluates how to improve the parameters and then resubmits the circuits. The mathematics behind the VQEs depends on the fact that the expectation of a wave function’s energy is greater than or equal to its exact ground state energy level.<br>
 
-In simple terms, the quantum part comes into effect in simulating different electronic configurations in the molecule. These are then measured at each configuration and sent to the classical algorithm. Classical optimization techniques like gradient descent, SPSA or SLSQP are performed for each configuration to obtain the lowest energy (the ground state) of that molecule. It is variational as the expectation of the trial wavefunction is at least equal to the ground state energy.<br>
+In simple terms, the quantum part comes into effect in simulating different electronic configurations in the molecule and their interactions. These are then measured at each configuration and sent to the classical algorithm. Classical optimization techniques like gradient descent, SPSA or SLSQP are performed for each configuration to finally obtain the lowest energy (the ground state) for that molecule. It is variational as the expectation of the trial wavefunction is at least equal to the ground state energy.<br>
 
   ### Keywords and their meaning<br>
 - **Hamiltonian**: An operator defined for a system, it encompasses both the kinetic and potential energy of a system. The Hamiltonian is a mathematical function that encompasses the energy of a system of atoms or molecules<br>
