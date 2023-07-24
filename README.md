@@ -146,6 +146,9 @@ print("AzureQuantum " + backend_to_use.name() + " result:\n")
 print(result.groundenergy)
 ```
 ## Output
+
+**Optimizer Used** : SPSA <br>
+**Provider** : IonQ Simulator
 | Molecule | Ground State Energy (Jordan-Wigner Mapping)| Ground State Energy (Bravyi-Kitaev Mapping) | Number of Qubits (JW) | Number of Qubits (BK) |
 |:---------- | ---------- | ---------- | ---------- | ---------- |
 | H2 | -1.804 eV |  | | |
