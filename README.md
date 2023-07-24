@@ -15,8 +15,9 @@ The Azure Quantum workspace provides hardware and software to run quantum comput
 In this blog we shall look into the implementation of a Variational Quantum Eigensolver using Qiskit and run it on an Azure backend for three molecules: 
   - H2 (Inter-Atomic distance of 0.76 Armstrong)
   - HF (Inter-Atomic Distance of 0.92 Armstrong)
-  - LiH (Inter-Atomic distance of 1.6 Armstrong)
-    
+  - LiH (Inter-Atomic distance of 1.6 Armstrong)<br>
+  
+(The Inter-Atomic distances are approximations and not the exact values)
 The compounds/molecules are chosen based on their size and inter-molecular distances as larger molecules require a greater number of qubits which is limited by the availability of qubits by the Quantum resource providers. 
 
 ## Introduction to Variational Quantum Eigensolvers (VQEs)<br>
