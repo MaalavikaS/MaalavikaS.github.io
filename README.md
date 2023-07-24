@@ -25,10 +25,13 @@ VQEs are a class of hybrid algorithms in Quantum Computing that aims to obtain t
 In simple terms, the quantum part comes into effect in simulating different electronic configurations in the molecule. These are then measured at each configuration and sent to the classical algorithm. Classical optimization techniques like gradient descent, SPSA or SLSQP are performed for each configuration to obtain the lowest energy (the ground state) of that molecule. It is variational as the expectation of the trial wavefunction is at least equal to the ground state energy.<br>
 
   ### Keywords and their meaning<br>
-•	**Hamiltonian**: An operator defined for a system, it encompasses both the kinetic and potential energy of a system. The Hamiltonian is a mathematical function that encompasses the energy of a system of atoms or molecules<br>
-•	**Ground State**: Lowest energy level for an atom or a molecule<br>
-•	**Quantum Phase Estimation**: Determines the eigen values using Quantum techniques meant for quantum computation tasks<br>
-•	**Eigensolver**: A classical algorithm to find the eigen values given a matrix<br>
+- **Hamiltonian**: An operator defined for a system, it encompasses both the kinetic and potential energy of a system. The Hamiltonian is a mathematical function that encompasses the energy of a system of atoms or molecules<br>
+- **Ground State**: Lowest energy level for an atom or a molecule<br>
+- **Quantum Phase Estimation**: Determines the eigen values using Quantum techniques meant for quantum computation tasks<br>
+- **Eigensolver**: A classical algorithm to find the eigen values given a matrix<br>
+- **SPSA**:
+- **SLSQP**:
+
 
 ## Tech Stack
 
