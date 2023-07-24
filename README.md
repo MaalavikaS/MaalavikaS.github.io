@@ -55,7 +55,7 @@ In simple terms, the quantum part comes into effect in simulating different elec
  BeH2 remains the largest molecule to be simulated as of 2022.<br>
 There are a few methods to transform a Fermionic Hamiltonian to a qubit 	Hamiltonian.
     - The Jordan Wigner representation aids in converting a Hamiltonian which consists of molecular arrangements (Fermions) into qubit states – this enables the simulation of molecular level computation (as molecules are quantum level systems in itself)
-    - Bravyi-Kitaev
+    - The Bravyi Kitaev transformation is a specific approach for mapping fermionic Hamiltonians to qubit Hamiltonians. It is particularly useful when dealing with problems in quantum chemistry, where the electronic structure of molecules is described by fermionic operators.
 3) Creating an Ansatz- Ansatz is an assumed function which has some adjustable parameters that can be manipulated to obtain an electronic configuration that gives us the ground state (in this case) -It is the set of qubits and quantum gates that represents the assumption with all its operations and variables. (Operations <=> Quantum Gates)<br>
 There are different kinds of Ansatz available:
     - UCCSD(As used here)
