@@ -146,7 +146,7 @@ print("AzureQuantum " + backend_to_use.name() + " result:\n")
 print(result.groundenergy)
 ```
 ## Output
-**Ansatz** : UCCSD
+**Ansatz** : UCCSD<br>
 **Optimizer Used** : SPSA <br>
 **Backend** : IonQ Simulator<br>
 
