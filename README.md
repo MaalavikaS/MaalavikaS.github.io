@@ -69,7 +69,7 @@ There are different kinds of Ansatz available:
 ![alt VQE workflow](https://github.com/MaalavikaS/Maals.github.io/blob/main/Fermionic%20Hamiltonian.png)
 
 ## Code Snippet
-[Source Code obtained from ](https://github.com/microsoft/Quantum/blob/main/samples/azure-quantum/variational-quantum-eigensolver/VQE-qiskit-hydrogen-session.ipynb)
+### [Source Code obtained from Microsoft Quantum Development Kit Samples](https://github.com/microsoft/Quantum/blob/main/samples/azure-quantum/variational-quantum-eigensolver/VQE-qiskit-hydrogen-session.ipynb)
 
 ### Using Qiskit
 #Importing PySCFDrivers to obtain the Hamiltonian for the molecule of choice
