@@ -42,7 +42,7 @@ In simple terms, the quantum part comes into effect in simulating different elec
 | Quantum Development Kit | An SDK used to interface with Azure Quantum service. Supports languages such as Q#, Qiskit and Cirq |
 | Q# | Q# is a domain-specific language optimized for quantum programming in the Microsoft Quantum ecosystem |
 | Python | Programming language |
-| Quantum Chemistry Library | kk |
+| Quantum Chemistry Library | The quantum chemistry library included in the Quantum Development Kit is specifically designed to synergize effectively with different computational chemistry packages |
 | Qiskit | Qiskit is based on Python, widely used, and focuses on a variety of quantum applications - Developed by IBM |
 | Broombridge | It is a data format that represents various aspects of a quantum circuit |
 | PYSCF Driver | Python-based Simulations of Chemistry Framework, a platform for quantum chemistry calculations and methodology |
