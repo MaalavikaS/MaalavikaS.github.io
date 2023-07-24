@@ -43,7 +43,7 @@ In simple terms, the quantum part comes into effect in simulating different elec
 | Q# | Q# is a domain-specific language optimized for quantum programming in the Microsoft Quantum ecosystem |
 | Python | Programming language |
 | Quantum Chemistry Library | kk |
-| Qiskit | Qiskit is based on Python, widely used, and focuses on a variety of quantum applications |
+| Qiskit | Qiskit is based on Python, widely used, and focuses on a variety of quantum applications - Developed by IBM |
 | Broombridge | It is a data format that represents various aspects of a quantum circuit |
 | PYSCF Driver | Python-based Simulations of Chemistry Framework, a platform for quantum chemistry calculations and methodology |
 | NWChem (Alternate to PySCF Driver) | NWChem is an open-source computational chemistry software package widely used for performing quantum chemical calculations and simulations. The fermionic Hamiltonian data for various compounds can be downloaded to be used in simulations|
