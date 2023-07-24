@@ -146,10 +146,10 @@ print("AzureQuantum " + backend_to_use.name() + " result:\n")
 print(result.groundenergy)
 ```
 ## Output
-| Molecule | Ground State Energy| Number of Qubits |
+| Molecule | Ground State Energy (Jordan-Wigner Mapping)| Ground State Energy (Bravyi-Kitaev Mapping) |
 |:---------- | ---------- | ---------- |
 | H2 | -1.804 eV |  |
-| HF | -102.864 eV | |
+| HF | -102.864 eV | -102.604 eV|
 | LiH | -6.836 eV| |
 
 ---------------------------------------------------------------------
