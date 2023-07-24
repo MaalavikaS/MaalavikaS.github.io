@@ -1,5 +1,4 @@
 # MTC Student Developer Programme 2023
-## Quantum Computing with Azure Quantum<br>
 
 ![alt Quantum](https://github.com/MaalavikaS/Maals.github.io/blob/main/Q.png)
 # Quantum Computing: Applications in Chemistry and Material Sciences<br>
