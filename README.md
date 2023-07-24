@@ -158,6 +158,8 @@ print(result.groundenergy)
 | HF | -102.864 eV | -102.604 eV| | 4 |
 | LiH | -6.836 eV| | | |
 
+## Visualizing Molecules using Copilot for Azure Quantum
+
 ---------------------------------------------------------------------
 ## References and Sources
 ### VQE Related Articles :electron:
