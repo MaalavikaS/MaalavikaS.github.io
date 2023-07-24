@@ -13,9 +13,9 @@ Quantum Computing can simulate molecular interactions. Simulations can be demons
 ## Azure Quantum & Chemistry<br>
 The Azure Quantum workspace provides hardware and software to run quantum computations on actual Quantum Hardware or Simulators. The Quantum Development Kit with its Chemistry Tools provides many built-in functions to estimate ground state energies such as QPEs, perform Jordan Wigner transformations, loading Broombridge schematics etc.
 In this blog we shall look into the implementation of a Variational Quantum Eigensolver using Qiskit and run it on an Azure backend for three molecules: 
-  - H2 (Inter-atomic distance of 0.76 Armstrong)
+  - H2 (Inter-Atomic distance of 0.76 Armstrong)
   - HF (Inter-Atomic Distance of 0.92 Armstrong)
-  - LiH (Inter-atomic distance of 1.6 Armstrong)
+  - LiH (Inter-Atomic distance of 1.6 Armstrong)
     
 The compounds/molecules are chosen based on their size and inter-molecular distances as larger molecules require a greater number of qubits which is limited by the availability of qubits by the Quantum resource providers. 
 
