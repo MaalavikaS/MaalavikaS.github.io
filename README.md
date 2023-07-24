@@ -159,7 +159,11 @@ print(result.groundenergy)
 | LiH | -6.836 eV| | | |
 
 ## Visualizing Molecules using Copilot for Azure Quantum
+**Di-Hydrogen**
+![alt H2](https://github.com/MaalavikaS/Quantum_Team.github.io/blob/main/Copilot-H2.png)
 
+**Hydrogen Fluoride**
+![alt HF](https://github.com/MaalavikaS/Quantum_Team.github.io/blob/main/Copilot-HF.png)
 ---------------------------------------------------------------------
 ## References and Sources
 ### VQE Related Articles :electron:
