@@ -52,7 +52,7 @@ In simple terms, the quantum part comes into effect in simulating different elec
 
 1) Realize a Hamiltonian to compute the ground state of the required molecule – this would be the problem you want to solve for ( Molecular Hamiltonian in this case).
 2) Map the Fermionic (molecular) Hamiltonian to a qubit Hamiltonian. – The qubit Hamiltonian mimics the electronic interactions within the molecule. This is where the limitation arises. As the size of the molecule increases, so does the number of electrons in each orbital and hence the number of qubits needed to encode them.
- BeH2 remains the largest molecule to be simulated as of 2022.
+ BeH2 remains the largest molecule to be simulated as of 2022.<br>
 There are a few methods to transform a Fermionic Hamiltonian to a qubit 	Hamiltonian.
     - The Jordan Wigner representation aids in converting a Hamiltonian which consists of molecular arrangements (Fermions) into qubit states – this enables the simulation of molecular level computation (as molecules are quantum level systems in itself)
     - Bravyi-Kitaev
