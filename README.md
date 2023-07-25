@@ -154,7 +154,7 @@ print(result.groundenergy)
 
 | Molecule | Ground State Energy (Jordan-Wigner Mapping)| Ground State Energy (Bravyi-Kitaev Mapping) | Number of Qubits (JW) | Number of Qubits (BK) |
 |:---------- | ---------- | ---------- | ---------- | ---------- |
-| H2 | -1.804 eV |  | | |
+| H2 | -1.804 eV | -1.832 eV | | 4 |
 | HF | -102.864 eV | -102.604 eV| | 4 |
 | LiH | -6.836 eV| | | |
 
