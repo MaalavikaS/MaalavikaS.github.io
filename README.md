@@ -155,7 +155,7 @@ print(result.groundenergy)
 | Molecule | Ground State Energy using simulator)| Ground State Energy using QPU | Number of Qubits (BK) |
 |:---------- | ---------- | ---------- | ---------- |
 | H2 | -1.804 eV | -1.832 eV | 4 |
-| HF | -102.864 eV | -102.604 eV| 4 |
+| HF | -102.864 eV | -102.183 eV| 4 |
 | LiH | -6.836 eV| -6.445 eV | 12 |
 
 ### Implementing VQE using Q# and QDK for Di-Hydrogen Molecule
