@@ -207,6 +207,26 @@ operation PrepareStateVQE (JWEncodedData: JordanWignerEncodingData, theta1: Doub
 qsharp.config["dump.basisStateLabelingConvention"] = "bitstring"
 prepare_state.simulate(JWEncodedData=encoded_data_h2, theta1=0.001, theta2=-0.001, theta3=0.001, nSamples=1)
 ```
+
+```qsharp.config["dump.basisStateLabelingConvention"] = "bitstring"```
+```prepare_state.simulate(JWEncodedData=encoded_data_h2, theta1=0.001, theta2=-0.001, theta3=0.001, nSamples=1)```
+```prepare_state_simple = qsharp.compile("""open Microsoft.Quantum.Core;
+open Microsoft.Quantum.Chemistry;
+open Microsoft.Quantum.Chemistry.JordanWigner;
+open Microsoft.Quantum.Chemistry.JordanWigner.VQE;
+open Microsoft.Quantum.Intrinsic;
+open Microsoft.Quantum.Diagnostics;
+
+operation PrepareStateVQE (JWEncodedData: JordanWignerEncodingData) : Unit {
+    let (nSpinOrbitals, fermionTermData, inputState, energyOffset) = JWEncodedData!;
+    use qubits = Qubit[nSpinOrbitals];
+    X(qubits[0]);
+    X(qubits[1]);
+    DumpRegister((), qubits); // Display the simulated value of the qubit register
+    ResetAll(qubits);
+}""")```
+```prepare_state_simple.simulate(JWEncodedData=encoded_data_h2)```
+```prepare_state_simple.estimate_resources(JWEncodedData=encoded_data_h2)```
 ----------------------------------------------------------------------------------------------
 
 ## Visualizing Molecules using Copilot for Azure Quantum
