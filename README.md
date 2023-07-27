@@ -152,10 +152,10 @@ print(result.groundenergy)
 **Optimizer Used** : SPSA <br>
 **Backend** : IonQ Simulator<br>
 
-| Molecule | Ground State Energy using simulator)| Ground State Energy using QPU |
+| Molecule | Ground State Energy using simulator)| Ground State Energy using QPU (IonQ Aria) |
 |:---------- | ---------- | ---------- |
 | H2 | -1.804 eV | -1.832 eV |
-| HF | -102.864 eV | -102.183 eV|
+| HF | -102.864 eV | -101.038 eV|
 | LiH | -6.836 eV| -6.445 eV |
 
 ----------------------------------------------------------------------------------------------
